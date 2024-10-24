@@ -45,4 +45,9 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+vim.keymap.set('n', '-', '<CMD>Oil<CR>', { desc = 'Open parent directory' })
+vim.api.nvim_set_keymap('n', 'd', '"_d', { noremap = true })
+vim.api.nvim_set_keymap('n', 'D', '"_D', { noremap = true })
+vim.api.nvim_set_keymap('v', 'd', '"_d', { noremap = true })
+
 -- vim: ts=2 sts=2 sw=2 et
