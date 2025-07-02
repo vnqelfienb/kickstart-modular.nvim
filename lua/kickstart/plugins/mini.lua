@@ -35,6 +35,10 @@ return {
       require('mini.indentscope').setup()
       require('mini.jump').setup()
       require('mini.move').setup()
+      require('mini.animate').setup {
+        cursor = { enable = true },
+        scroll = { enable = true },
+      }
 
       -- ... and there is more!
       --  Check out: https://github.com/echasnovski/mini.nvim
